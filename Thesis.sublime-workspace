@@ -1,0 +1,681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"rad",
+				"radians"
+			],
+			[
+				"deg",
+				"degree"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"S",
+				"StrNums"
+			],
+			[
+				"A",
+				"Alphabet"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "bf4-i-%2sSy\n\naRUcRF97EN",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Windows",
+				"name": "bf4-i-%2sSy"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"table",
+				"Table Editor: Show demo film in new scratch view"
+			],
+			[
+				"tab",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"sshtm",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"ssasp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssmu",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"op",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ssmm",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"ss",
+				"Set Syntax: Markdown"
+			],
+			[
+				"o",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"ssaca",
+				"Set Syntax: AcademicMarkdown"
+			],
+			[
+				"ssma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ssmar",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"ssmul",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"ssmma",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"pain",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssacama",
+				"Set Syntax: AcademicMarkdown"
+			],
+			[
+				"ssmark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"prewi",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"markp",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"sesmark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pacain",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 584.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"sublime.packages_path()",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Program.cs",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.log",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.out",
+		"/C/Program Files (x86)/MiKTex/dvipdfm/config/config",
+		"/C/Program Files (x86)/MiKTex/miktex/config/updmap.cfg",
+		"/C/Program Files (x86)/MiKTex/pdftex/config/pdftex.cfg",
+		"/C/Program Files (x86)/MiKTex/dvips/config/config.ps",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_02.06_22.53.58.txt",
+		"/C/Users/Max/AppData/Local/Temp/scatter_demo.py",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/.gitignore",
+		"/C/Users/Max/AppData/Local/Temp/slider_demo.py",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/0øY",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/0ù`",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Èôe",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.562/SplitsDensities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.325/SplitsDensities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.722/SplitsVelocities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.200/SplitsVelocities_05.06_21.28.02.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.633/SplitsDensities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.871/SplitsDensities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_06.06_00.45.13.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_23.56_17.30.22.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_23.56_19.14.18.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsDensities_04.06_14.30.53.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsDensities_05.06_19.43.50.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.357/SplitsVelocities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsDensities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsDensities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsDensities_06.06_00.45.13.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_04.06_14.30.53.txt",
+		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.935/SplitsVelocities_04.06_14.30.53.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsDensities_04.06_14.30.53.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsDensities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsDensities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsDensities_05.06_21.28.02.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsDensities_06.06_00.45.13.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_04.06_14.30.53.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_05.06_21.28.02.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_06.06_00.45.13.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_23.56_17.30.22.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.909/SplitsVelocities_23.56_19.14.18.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.367/SplitsVelocities_23.56_19.14.18.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.194/SplitsDensities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.257/SplitsDensities_04.06_14.30.53.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsDensities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsDensities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsDensities_06.06_00.45.13.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsDensities_05.06_21.28.02.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_04.06_14.30.53.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_19.43.50.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_21.07.48.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_21.28.02.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_06.06_00.45.13.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_23.56_17.30.22.txt",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_23.56_19.14.18.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_06.06_00.45.13.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.30.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_04.06_14.14.55.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.14.55.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.11.26.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_01.06.01.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_00.56.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_00.48.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_21.07.48.txt",
+		"/D/SplitsVelocities_05.06_19.43.50.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_03.06_20.05.06.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_19.43.50.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_16.33.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_03.06_17.30.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_03.06_19.14.18.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_03.06_19.14.18.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_00.56.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_05.06_20.53.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_05.06_16.33.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_14.30.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_14.14.55.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_14.11.26.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_01.06.01.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_04.06_00.48.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.53.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_03.06_20.05.06.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_03.06_17.30.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_06.05_16.38.40.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_05.06_20.53.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_05.06_16.33.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_04.06_14.30.53.txt",
+		"/I/New folder/Velocities_01.05_15.13.46.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_test.txt",
+		"/I/New folder/example.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/example.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_06.05_16.57.32.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.05_15.21.42.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.05_15.13.46.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_20.53.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.46.11.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.29.51.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.03.31.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_21.56.55.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_01.06_13.09.35.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_13.09.35.txt",
+		"/F/Users/Maxim/UserData/Programming/DynamicDataDisplay/DynamicDataDisplay.Silverlight.Readme.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_12.46.56.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_12.43.21.txt",
+		"/F/Users/Maxim/Desktop/New Text Document.txt",
+		"/F/Users/Maxim/Desktop/Reduction/Reduction.cpp",
+		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.237/PASSWORD - READ ME.txt",
+		"/F/Users/Maxim/Desktop/010.HTM",
+		"/D/Downloads/Installs/Games/Chess/Chess.exe",
+		"/D/Downloads/Installs/Multimedia/Adobe Premiere Pro CC 7.2.2 Multilanguage [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/C/Program Files/Wolfram Research/Mathematica/9.0/Configuration/Licensing/mathpass",
+		"/C/Program Files/Wolfram Research/Mathematica/9.0/Configuration/Licensing/playerpass",
+		"/D/Downloads/Installs/Modelling/Wolfram Mathematica 9.0.1/Wolfram.Research.Mathematica.v9.0.0.0.Keymaker-AGAiN/file_id.diz",
+		"/E/documents/My Clippings.txt",
+		"/F/Users/Maxim/Documents/My Kindle Content/PhysRevLett.46.1351.sdr/PhysRevLett.46.1351.pds",
+		"/F/Users/Maxim/Documents/My Kindle Content/PhysRevLett.46.1351.sdr/PhysRevLett.46.1351.pdt"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"e",
+			"Bookmark",
+			" n",
+			"y.*= ",
+			"y.*n",
+			".",
+			" n",
+			"y.*= ",
+			"y.*n",
+			" n",
+			"y.= ",
+			"y.*n",
+			".",
+			" n",
+			"y.*= ",
+			"y.*n",
+			".",
+			" n",
+			"y.*= ",
+			"y.*n",
+			".",
+			"y = ",
+			" n",
+			"y.*n",
+			".",
+			"y = ",
+			" n",
+			"y.*N",
+			".",
+			"y = ",
+			" n",
+			"y.*n",
+			" n",
+			" .*n",
+			".",
+			" n",
+			"c:.",
+			"c:.*n",
+			".",
+			" n",
+			"c:.",
+			"c:.*n",
+			".",
+			" n",
+			"c:.",
+			"c:.*n",
+			"Particle",
+			".",
+			" n",
+			"c: ",
+			"c:.",
+			"c:.*n",
+			".",
+			" n",
+			"c: ",
+			"c:.",
+			"c:.*n",
+			" n",
+			"c: ",
+			".",
+			"c:.*n",
+			".",
+			" n",
+			"c: ",
+			"c:.*n",
+			".",
+			" n",
+			"c: ",
+			"c.*n",
+			".",
+			" n",
+			"c: ",
+			"c:.*n",
+			".",
+			"......... ",
+			"matri",
+			"g_Camera.",
+			"Camera",
+			" noize.*",
+			"Veloc: ",
+			" n",
+			"c:.",
+			"c:.*n",
+			".n",
+			"c:.",
+			"c:.*n",
+			" n",
+			".*n",
+			".",
+			"e: ",
+			"e:.*",
+			" n",
+			": ",
+			":.*n",
+			".",
+			"/",
+			"179.5",
+			"179ю5",
+			".",
+			"e: ",
+			"e:.",
+			"e:.*",
+			".",
+			"c: ",
+			".n",
+			"c:.*n",
+			".",
+			": ",
+			":.*",
+			".",
+			" n",
+			".* n",
+			":.* n",
+			".",
+			"e: ",
+			"e:.*",
+			".",
+			" n",
+			"n",
+			"c: ",
+			"c:.*n",
+			"/",
+			"=",
+			"width",
+			"postEventData",
+			"networkerror",
+			"+b",
+			";"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			",",
+			"",
+			"\\\\",
+			";\n",
+			"",
+			"{",
+			" ",
+			", "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"auto_name": "bf4-i-%2sSy",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 289.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 128.0
+	},
+	"project": "Thesis.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sess",
+				"Pages\\Helpers\\SessionHelper.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Max\\Documents\\rawProject.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
