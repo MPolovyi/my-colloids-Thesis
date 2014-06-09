@@ -146,38 +146,23 @@
 	\renewcommand{\labelenumi}{\asbuk{enumi})}
 	\renewcommand{\labelenumii}{\arabic{enumii})}
 
-	\usepackage[chapter]{algorithm}
-	\usepackage{algpseudocode}
-	\algrenewcommand{\algorithmicif}{\textbf{если}}
-	\algrenewcommand{\algorithmicforall}{\textbf{для всех}}
-	\algrenewcommand{\algorithmicfunction}{\textbf{Функция}}
-	\algrenewtext{EndFunction}{\textbf{конец функции}}
-	\algrenewcommand{\algorithmicreturn}{\textbf{вернуть}}
-	\algrenewcommand{\algorithmicdo}{\textbf{делай}}
-	\algrenewcommand{\algorithmicthen}{\textbf{тогда}}
-	\algrenewcommand{\algorithmicend}{\textbf{конец}}
-	\algrenewtext{EndFor}{\textbf{конец цикла}}
-
 	\usepackage[pdftex,bookmarks=true,colorlinks=true,linkcolor=blue,citecolor=Green,linktoc=none]{hyperref}
 	\newcommand{\term}[1]{\textit{#1}}
 	\newcommand{\bydef}{\ensuremath{\stackrel{\text{\upshape df}}{=}}}
 	\newcommand{\<}{\langle}
 	\renewcommand{\>}{\rangle}
 	\newcommand{\includechapter}[1]{\subimport{chapter_#1/}{chapter_#1}}
-	\newcommand{\inputintro}{\input{sec_Intro} \newpage}
 
 	\bibliographystyle{gost705}
-
+	\usepackage{epigraph}
 \begin{document}
 	\newpage\tableofcontents
 
 	\addtocounter{totfigures}{\value{figure}}
 	\addtocounter{tottables}{\value{table}}
 	
-	\includechapter{Introduction}
-	\cite[p. 2]{gregoire_onset_2004,PhysRevE.88.032108}
-	\newpage
-	\cite[p. 4]{bonabeau_swarm_1999}
+	\subimport{chapter_Introduction/}{chapter_Introduction.tex}
+	\subimport{chapter_First/}{chapter_First.tex}
 	
 	\begin{appendices}
 		\renewcommand\thechapter{\Asbuk{chapter}}

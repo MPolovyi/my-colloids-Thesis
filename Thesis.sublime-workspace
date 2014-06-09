@@ -40,12 +40,54 @@
 	"buffers":
 	[
 		{
-			"contents": "bf4-i-%2sSy\n\naRUcRF97EN",
+			"file": "chapter_Introduction/chapter_Introduction.tex",
 			"settings":
 			{
-				"buffer_size": 23,
-				"line_ending": "Windows",
-				"name": "bf4-i-%2sSy"
+				"buffer_size": 70,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter_Introduction/sec_Intro.tex",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\\documentclass[a4paper,14pt,russian]{extreport}\n\n	\\usepackage{extsizes}\n	\\usepackage{titlesec}\n	\\usepackage{cmap}\n	\\usepackage[T2A]{fontenc}\n	\\usepackage[utf8]{inputenc}\n	\\usepackage[russian]{babel}\n\n	\\usepackage{pscyr}\n	\\usepackage{graphicx}\n	\\usepackage{amssymb,amsfonts,amsmath,amsthm}\n	\\usepackage{indentfirst}\n	\\usepackage[usenames,dvipsnames]{color}\n	\\usepackage{makecell}\n	\\usepackage{multirow}\n	\\usepackage{ulem}\n	\\usepackage{tocloft}\n	\\usepackage{import}\n	\\usepackage{lastpage}\n	\\usepackage{etoolbox}\n	\\usepackage[title,titletoc]{appendix}\n	\\usepackage{pdfpages}\n	\\usepackage{listings}\n\n	\\usepackage[tableposition=top]{caption}\n	\\usepackage{subcaption}\n	\\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}\n	\\DeclareCaptionLabelFormat{gosttable}{Таблица #2}\n	\\DeclareCaptionLabelSeparator{gost}{~---~}\n	\\captionsetup{labelsep=gost}\n	\\captionsetup[figure]{labelformat=gostfigure}\n	\\captionsetup[table]{labelformat=gosttable}\n	\\renewcommand{\\thesubfigure}{\\asbuk{subfigure}}\n\n	\\usepackage{fancyhdr}\n	\\pagestyle{fancy}\n	\\fancyhf{}\n	\\fancyhead[R]{\\thepage}\n	\\fancyheadoffset{0mm}\n	\\fancyfootoffset{0mm}\n	\\setlength{\\headheight}{17pt}\n	\\renewcommand{\\headrulewidth}{0pt}\n	\\renewcommand{\\footrulewidth}{0pt}\n	\\fancypagestyle{plain}{\n		\\fancyhf{}\n		\\rhead{\\thepage}}\n	\\setcounter{page}{5}\n\n	\\linespread{1.3}\n	\\renewcommand{\\rmdefault}{ftm}\n	\\frenchspacing\n\n	\\titleformat{\\chapter}[display]\n		{\\filcenter}\n		{\\MakeUppercase{\\chaptertitlename} \\thechapter}\n		{8pt}\n		{\\bfseries}{}\n		\n	\\titleformat{\\paragraph}[display]\n		{\\filcenter}\n		{\\MakeUppercase{\\chaptertitlename} \\thechapter}\n		{8pt}\n		{\\bfseries}{}\n		\n	\\titleformat{\\section}\n		{\\normalsize\\bfseries}\n		{\\thesection}\n		{1em}{}\n		\n	\\titleformat{\\subsection}\n		{\\normalsize\\bfseries}\n		{\\thesubsection}\n		{1em}{}\n		\n	\\titlespacing*{\\chapter}{0pt}{-30pt}{8pt}\n	\\titlespacing*{\\paragraph}{0pt}{-30pt}{8pt}\n	\\titlespacing*{\\section}{\\parindent}{*4}{*4}\n	\\titlespacing*{\\subsection}{\\parindent}{*4}{*4}\n\n	\\renewcommand{\\cfttoctitlefont}{\\hspace{0.38\\textwidth} \\bfseries\\MakeUppercase}\n	\\renewcommand{\\cftbeforetoctitleskip}{-1em}\n	\\renewcommand{\\cftaftertoctitle}{\\mbox{}\\hfill \\\\ \\mbox{}\\hfill{\\footnotesize Стр.}\\vspace{-2.5em}}\n	\\renewcommand{\\cftchapfont}{\\normalsize\\bfseries \\MakeUppercase{\\chaptername} }\n	\\renewcommand{\\cftsecfont}{\\hspace{31pt}}\n	\\renewcommand{\\cftsubsecfont}{\\hspace{11pt}}\n	\\renewcommand{\\cftbeforechapskip}{1em}\n	\\renewcommand{\\cftparskip}{-1mm}\n	\\renewcommand{\\cftdotsep}{1}\n	\\setcounter{tocdepth}{2}\n	\\setcounter{secnumdepth}{5}\n\n	\\usepackage[square,numbers,sort&compress]{natbib}\n	\\newcounter{totfigures}\n	\\newcounter{tottables}\n	\\newcounter{totreferences}\n	\\makeatletter\n	\\renewcommand{\\@dotsep}{2}\n	\\newcommand{\\l@likechapter}[2]{{\\bfseries\\@dottedtocline{0}{0pt}{0pt}{#1}{#2}}}\n	\\AtEndDocument{%\n	  \\addtocounter{totfigures}{\\value{figure}}%\n	  \\addtocounter{tottables}{\\value{table}}%\n	  \\immediate\\write\\@mainaux{%\n	    \\string\\gdef\\string\\totfig{\\number\\value{totfigures}}%\n	    \\string\\gdef\\string\\tottab{\\number\\value{tottables}}%\n	    \\string\\gdef\\string\\totref{\\number\\value{totreferences}}%\n	  }%\n	}\n	\\makeatother\n	\\pretocmd{\\chapter}{\\addtocounter{totfigures}{\\value{figure}}}{}{}\n	\\pretocmd{\\chapter}{\\addtocounter{tottables}{\\value{table}}}{}{}\n	\\pretocmd{\\bibitem}{\\addtocounter{totreferences}{1}}{}{}\n	\\newcommand{\\likechapterheading}[1]{\n		\\begin{center}\n		\\textbf{\\MakeUppercase{#1}}\n		\\end{center}\n		\\empline}\n	\\newcommand{\\likechapter}[1]{	\n		\\phantomsection\n		\\likechapterheading{#1}	\n		\\addcontentsline{toc}{likechapter}{\\texorpdfstring{\\MakeUppercase{#1}}{#1}}}\n	\\newcommand{\\empline}{\\mbox{}\\newline}\n	\\renewcommand{\\bibnumfmt}[1]{#1.\\hfill}\n	\\renewcommand{\\bibsection}{\\likechapter{Список литературы}}\n	\\setlength{\\bibsep}{0pt}\n\n	\\newcommand{\\append}[1]{\n		\\clearpage\n		\\stepcounter{chapter}	\n		\\paragraph{\\MakeUppercase{#1}}\n		\\empline\n		\\addcontentsline{toc}{likechapter}{\\texorpdfstring{\\MakeUppercase{\\chaptertitlename~\\Asbuk{chapter}\\;#1}}{\\chaptertitlename~\\Asbuk{chapter}:~#1}}}\n		\n	\\usepackage{geometry}\n	\\geometry{left=3cm}\n	\\geometry{right=1.5cm}\n	\\geometry{top=2.4cm}\n	\\geometry{bottom=2.4cm}\n\n	\\usepackage{enumitem}\n	\\makeatletter\n	\\AddEnumerateCounter{\\asbuk}{\\@asbuk}{м)}\n	\\makeatother\n	\\setlist{nolistsep}\n	\\renewcommand{\\labelitemi}{-}\n	\\renewcommand{\\labelenumi}{\\asbuk{enumi})}\n	\\renewcommand{\\labelenumii}{\\arabic{enumii})}\n\n	\\usepackage[pdftex,bookmarks=true,colorlinks=true,linkcolor=blue,citecolor=Green,linktoc=none]{hyperref}\n	\\newcommand{\\term}[1]{\\textit{#1}}\n	\\newcommand{\\bydef}{\\ensuremath{\\stackrel{\\text{\\upshape df}}{=}}}\n	\\newcommand{\\<}{\\langle}\n	\\renewcommand{\\>}{\\rangle}\n	\\newcommand{\\includechapter}[1]{\\subimport{chapter_#1/}{chapter_#1}}\n\n	\\bibliographystyle{gost705}\n	\\usepackage{epigraph}\n\\begin{document}\n	\\newpage\\tableofcontents\n\n	\\addtocounter{totfigures}{\\value{figure}}\n	\\addtocounter{tottables}{\\value{table}}\n	\n	\\subimport{chapter_Introduction/}{chapter_Introduction.tex}\n	\\subimport{chapter_First/}{chapter_First.tex}\n	\\ref{\n	\\begin{appendices}\n		\\renewcommand\\thechapter{\\Asbuk{chapter}}\n		\\setcounter{chapter}{0}\n	\\end{appendices}\n\n	\\bibliography{Bibliography}\n	\n\n\\end{document}",
+			"file": "MainFile.tex",
+			"file_size": 5343,
+			"file_write_time": 130468076810264722,
+			"settings":
+			{
+				"buffer_size": 5140,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter_First/chapter_First.tex",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter_First/sec_ComputerModels.tex",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter_First/sec_AnimalFlocking.tex",
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -192,7 +234,7 @@
 	},
 	"console":
 	{
-		"height": 153.0,
+		"height": 442.0,
 		"history":
 		[
 			"sublime.packages_path()",
@@ -210,10 +252,37 @@
 	},
 	"file_history":
 	[
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Program.cs",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography.bib",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/sec_Stimul.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/sec_Stimul.log",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Thesis.sublime-project",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Plan.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Intro.tex",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LatexThesises.sublime-settings",
+		"/F/Users/Maxim/Desktop/thesis.tex",
+		"/F/Users/Maxim/Desktop/disser-1.3.0/nomake.cmd",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography1.bib",
+		"/F/Users/Maxim/Desktop/thesis.bib",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/.gitignore",
+		"/F/Users/Maxim/Desktop/nomake.cmd",
+		"/C/Users/Max/AppData/Local/Temp/science-2.bib",
+		"/C/Users/Max/AppData/Local/Temp/citations.bib",
+		"/C/Users/Max/AppData/Local/Temp/science-3.bib",
+		"/C/Users/Max/AppData/Local/Temp/science-1.bib",
+		"/C/Users/Max/AppData/Local/Temp/citeulike-5647758.bib",
+		"/C/Users/Max/AppData/Local/Temp/science.bib",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Exported Items.bib",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/chapter_Introduction.log",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/chapter_Introduction.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.pdf",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Introduction/Header.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Header/Header.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.aux",
+		"/F/Users/Maxim/Desktop/PassServ",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Program.cs",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.log",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.out",
 		"/C/Program Files (x86)/MiKTex/dvipdfm/config/config",
@@ -310,34 +379,7 @@
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_05.06_16.33.22.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_04.06_14.30.53.txt",
 		"/I/New folder/Velocities_01.05_15.13.46.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_test.txt",
-		"/I/New folder/example.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/example.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_06.05_16.57.32.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.05_15.21.42.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.05_15.13.46.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_20.53.58.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.46.11.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.29.51.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_22.03.31.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_02.06_21.56.55.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_01.06_13.09.35.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_13.09.35.txt",
-		"/F/Users/Maxim/UserData/Programming/DynamicDataDisplay/DynamicDataDisplay.Silverlight.Readme.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_12.46.56.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_01.06_12.43.21.txt",
-		"/F/Users/Maxim/Desktop/New Text Document.txt",
-		"/F/Users/Maxim/Desktop/Reduction/Reduction.cpp",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.237/PASSWORD - READ ME.txt",
-		"/F/Users/Maxim/Desktop/010.HTM",
-		"/D/Downloads/Installs/Games/Chess/Chess.exe",
-		"/D/Downloads/Installs/Multimedia/Adobe Premiere Pro CC 7.2.2 Multilanguage [ChingLiu]/ChingLiu.Install.Notes.nfo",
-		"/C/Program Files/Wolfram Research/Mathematica/9.0/Configuration/Licensing/mathpass",
-		"/C/Program Files/Wolfram Research/Mathematica/9.0/Configuration/Licensing/playerpass",
-		"/D/Downloads/Installs/Modelling/Wolfram Mathematica 9.0.1/Wolfram.Research.Mathematica.v9.0.0.0.Keymaker-AGAiN/file_id.diz",
-		"/E/documents/My Clippings.txt",
-		"/F/Users/Maxim/Documents/My Kindle Content/PhysRevLett.46.1351.sdr/PhysRevLett.46.1351.pds",
-		"/F/Users/Maxim/Documents/My Kindle Content/PhysRevLett.46.1351.sdr/PhysRevLett.46.1351.pdt"
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_test.txt"
 	],
 	"find":
 	{
@@ -355,6 +397,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tex",
 			"e",
 			"Bookmark",
 			" n",
@@ -481,8 +524,7 @@
 			"width",
 			"postEventData",
 			"networkerror",
-			"+b",
-			";"
+			"+b"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -551,35 +593,177 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "chapter_Introduction/chapter_Introduction.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 70,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								52,
+								52
 							]
 						],
 						"settings":
 						{
-							"auto_name": "bf4-i-%2sSy",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "chapter_Introduction/sec_Intro.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "MainFile.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4984,
+								4984
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "chapter_First/chapter_First.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								86
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "chapter_First/sec_ComputerModels.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "chapter_First/sec_AnimalFlocking.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -591,7 +775,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"layout":
 	{
@@ -618,7 +802,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 289.0
+		"height": 181.0
 	},
 	"output.find_results":
 	{
