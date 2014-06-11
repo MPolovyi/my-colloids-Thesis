@@ -155,21 +155,26 @@
 
 	\bibliographystyle{gost705}
 	\usepackage{epigraph}
+	\epigraphwidth 200pt
 \begin{document}
 	\newpage\tableofcontents
 
 	\addtocounter{totfigures}{\value{figure}}
 	\addtocounter{tottables}{\value{table}}
-	
-	\subimport{chapter_Introduction/}{chapter_Introduction.tex}
-	\subimport{chapter_First/}{chapter_First.tex}
-	
+
+	\newpage
+	\includechapter{Introduction}	
+	\includechapter{First}
+	\newpage
+	\bibliography{Bibliography}
+
 	\begin{appendices}
 		\renewcommand\thechapter{\Asbuk{chapter}}
 		\setcounter{chapter}{0}
 	\end{appendices}
 
-	\bibliography{Bibliography}
+
+	
 	
 
 \end{document}
