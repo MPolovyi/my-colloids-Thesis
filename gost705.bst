@@ -1379,7 +1379,6 @@ FUNCTION {article}
   new.sentence
   format.eprint output
   new.block
-  output.url
   format.annote output
   fin.entry
 }
@@ -1408,7 +1407,6 @@ FUNCTION {book}
   new.sentence
   format.eprint output
   new.block
-  output.url
   format.annote output
   fin.entry
 }
