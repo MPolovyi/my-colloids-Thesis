@@ -47,7 +47,7 @@
 			"file": "MainFile.tex",
 			"settings":
 			{
-				"buffer_size": 5189,
+				"buffer_size": 5214,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,15 +55,15 @@
 			"file": "chapter_First/chapter_First.tex",
 			"settings":
 			{
-				"buffer_size": 170,
+				"buffer_size": 199,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "chapter_First/sec_AnimalFlocking.tex",
+			"file": "chapter_First/sec_ComputerModels.tex",
 			"settings":
 			{
-				"buffer_size": 19621,
+				"buffer_size": 6983,
 				"line_ending": "Windows"
 			}
 		}
@@ -229,12 +229,20 @@
 	},
 	"file_history":
 	[
-		"/D/data/4 course/Thesis/gost705.bst",
-		"/C/Program Files (x86)/MikTeX/dvipdfm/config/config",
-		"/C/Program Files (x86)/MikTeX/miktex/config/updmap.cfg",
-		"/C/Program Files (x86)/MikTeX/pdftex/config/pdftex.cfg",
-		"/C/Program Files (x86)/MikTeX/dvips/config/config.ps",
-		"/C/Program Files (x86)/MikTeX/install.sh",
+		"/D/SplitsVelocities_14.06_08.26.23.txt",
+		"/D/Velocities_14.06_08.26.23.txt",
+		"/F/Users/Maxim/Desktop/PassServ",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/sec_AnimalFlocking.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Intro.tex",
+		"/C/Users/Max/AppData/Roaming/SumatraPDF/SumatraPDF-settings.txt",
+		"/D/data/4 course/Vicsek/Thesis/chapter_Introduction/sec_Intro.tex",
+		"//LITTLEDESTINY/Users/Max/ALC7LKPBFD4O5QIVL5DDZOPNQVCJIM2DZ",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/gost705.bst",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
+		"/C/Users/Max/.gitconfig",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography.bib",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705.dtx",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705s.bst",
@@ -242,10 +250,7 @@
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705.idx",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Abbreviations.tex",
 		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.442/ä¿a¿ ô«a¿ß. ûóÑG«¬ »pßGd¡¿ - royallib.ru.txt",
-		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Intro.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.toc",
-		"/C/Users/Max/AppData/Roaming/SumatraPDF/SumatraPDF-settings.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibLaTeX.js",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibTeX.js",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibTeX_RobinTan.js",
@@ -267,7 +272,6 @@
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.aux",
 		"/F/Users/Maxim/Desktop/dict_ru_ru-0.3.7.oxt",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/latex_ref_completions.py",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/sec_AnimalFlocking.tex",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/latex_ref_cite_completions.py",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/latex_cite_completions.py",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/Default (Windows).sublime-keymap",
@@ -295,7 +299,6 @@
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Introduction/Header.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Header/Header.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.aux",
-		"/F/Users/Maxim/Desktop/PassServ",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Program.cs",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.log",
@@ -353,10 +356,7 @@
 		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_04.06_14.30.53.txt",
 		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_19.43.50.txt",
 		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_21.07.48.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_21.28.02.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_06.06_00.45.13.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_23.56_17.30.22.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_23.56_19.14.18.txt"
+		"/C/Users/Max/AppData/Local/Temp/Rar$DRa0.600/SplitsVelocities_05.06_21.28.02.txt"
 	],
 	"find":
 	{
@@ -374,6 +374,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" - ",
 			"article",
 			"url",
 			"annote",
@@ -500,8 +501,7 @@
 			".",
 			" n",
 			".* n",
-			":.* n",
-			"."
+			":.* n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -509,6 +509,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			" --- ",
 			"journal",
 			"",
 			",",
@@ -580,15 +581,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5189,
+						"buffer_size": 5214,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4823,
-								4823
+								0,
+								0
 							]
 						],
 						"settings":
@@ -597,10 +598,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 201.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -609,7 +610,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 170,
+						"buffer_size": 199,
 						"regions":
 						{
 						},
@@ -629,35 +630,34 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "chapter_First/sec_AnimalFlocking.tex",
+					"file": "chapter_First/sec_ComputerModels.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19621,
+						"buffer_size": 6983,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19523,
-								19523
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8867.0,
+						"translation.y": 1306.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -754,7 +754,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 185.0,
+	"side_bar_width": 237.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
