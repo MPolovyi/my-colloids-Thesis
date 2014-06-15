@@ -43,22 +43,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Program Files (x86)/Adobe/Acrobat 10.0/Acrobat/Javascripts/splitpages.js",
-			"settings":
-			{
-				"buffer_size": 2308,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_01.50.54.txt",
-			"settings":
-			{
-				"buffer_size": 57374,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -221,6 +205,33 @@
 	},
 	"file_history":
 	[
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_15.06_04.00.21.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.11.26.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.30.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_16.33.22.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_19.43.50.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_14.14.55.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_20.53.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_21.07.48.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_05.06_21.28.02.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_13.06_22.51.23.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_06.06_00.45.13.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_14.06_01.01.44.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_13.06_23.24.17.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_14.06_23.34.17.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_15.06_12.51.02.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_15.06_13.15.17.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/DataViewerPy/MainFile.py",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_15.06_03.32.57.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_15.06_03.49.58.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_14.06_02.48.07.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_01.06.01.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_00.56.53.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_03.32.57.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsDensities_04.06_00.48.58.txt",
+		"/C/Program Files (x86)/Adobe/Acrobat 10.0/Acrobat/Javascripts/splitpages.js",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_15.06_03.32.57.txt",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_01.50.54.txt",
 		"/F/Users/Maxim/Desktop/splitpages.js",
 		"/D/Downloads/Installs/Office/Foxit Advanced PDF Editor v3.10 Final Ml_Rus/Readme.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_14.06_23.34.17.txt",
@@ -321,34 +332,7 @@
 		"/C/Users/Max/AppData/Local/Temp/science.bib",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Exported Items.bib",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/chapter_Introduction.log",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.pdf",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Introduction/Header.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Header/Header.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.aux",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Program.cs",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.log",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/TestFile.out",
-		"/C/Program Files (x86)/MiKTex/dvipdfm/config/config",
-		"/C/Program Files (x86)/MiKTex/miktex/config/updmap.cfg",
-		"/C/Program Files (x86)/MiKTex/pdftex/config/pdftex.cfg",
-		"/C/Program Files (x86)/MiKTex/dvips/config/config.ps",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_02.06_22.53.58.txt",
-		"/C/Users/Max/AppData/Local/Temp/scatter_demo.py",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/.gitignore",
-		"/C/Users/Max/AppData/Local/Temp/slider_demo.py",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/0øY",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/0ù`",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Èôe",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.562/SplitsDensities_05.06_21.07.48.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.325/SplitsDensities_05.06_19.43.50.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.722/SplitsVelocities_05.06_19.43.50.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.200/SplitsVelocities_05.06_21.28.02.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.633/SplitsDensities_05.06_21.07.48.txt",
-		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.871/SplitsDensities_05.06_21.07.48.txt",
-		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_06.06_00.45.13.txt",
-		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_23.56_17.30.22.txt",
-		"/F/Users/Maxim/Desktop/New folder/SplitsVelocities_23.56_19.14.18.txt"
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.pdf"
 	],
 	"find":
 	{
@@ -565,65 +549,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Program Files (x86)/Adobe/Acrobat 10.0/Acrobat/Javascripts/splitpages.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1837,
-								1837
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_01.50.54.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 57374,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
