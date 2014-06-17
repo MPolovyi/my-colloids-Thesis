@@ -1,13 +1,3 @@
 {
-	"folders":
-	[
-		{
-			"follow_symlinks": true,
-			"path": "."
-		}
-	],
-	"settings":
-	{
-		"TEXroot": "MainFile.tex"
-	}
+
 }

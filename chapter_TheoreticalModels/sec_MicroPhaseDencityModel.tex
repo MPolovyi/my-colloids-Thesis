@@ -1,0 +1,40 @@
+%!TEX root = ..\MainFile.tex
+\section{Модель микроскопической фазовой плотности} % (fold)
+\label{sec:KulinskyModel}
+
+	Подход, основанный на рассмотрении функционала микроскопической фазовой плотности, предложенный в последне годы \cite{chepizhko2013,kulinskii2012}, позволил получить, в приближении идеальной самодвижущейся жидкости, уравнения движения, отличные от рассмотренных в разделе \ref{sec:ClassicalModelsWIthViscosity}.
+
+	Строгое получение этих уравнений выходит далеко за рамки работы, потому приведем здесь только исходные положения и результаты.
+
+	Функционал микроскопической фазовой плотности записывается следующим образом:
+	\begin{equation}
+		N(x,t) = \sum_i \delta(x-x_i(t))
+	\end{equation}
+	где $x = (\boldsymbol{r}, \boldsymbol{v})$, подчинаяется закону сохранения
+	\begin{equation}
+		\partial_t N  + \boldsymbol{v} \partial_{\boldsymbol{r}} N + \partial_{\boldsymbol{v}} (\boldsymbol{\dot{v}} N) = 0
+	\end{equation}
+
+	Соответствующие плотность и поток плотности получаются как
+	\begin{align}
+		\rho^{(m)}(\boldsymbol{r},t) = \int N(x,t)d \boldsymbol{v}
+		\\
+		\boldsymbol{j}^{(m)}(\boldsymbol{r},t) = \int \boldsymbol{v} N(x,t)d \boldsymbol{v}
+	\end{align}
+
+	В контексте модеил Vicsek'а, уравнение движения без шумового члена записывается как
+	\begin{equation}
+		\frac{d \boldsymbol{v_i}}{dt} = \boldsymbol{\omega_i} \times \boldsymbol{v_i}
+	\end{equation}
+	и отображает тот факт, что энергия частиц в алгоритме Vicsek'a сохраняется.
+
+	Путем не сложных, но весьма громозких преобразований, для предельного случая идеальной самодвижущейся жидкости можно получить следующее уравнение движения:
+
+	\begin{equation}
+	\label{eq:KulinsciiEqOfMotion}
+		\frac{\partial v}{\partial x} = -\frac{1}{2 \rho} \frac{\partial}{\partial x} (\rho -\rho v^2)+(\frac{\rho}{2} - \frac{\alpha}{\rho} \frac{\partial v}{\partial x})v + \frac{\beta}{\rho} \frac{\partial v}{\partial x} + \frac{\rho}{2} + \frac{\alpha}{2}) v^3
+	\end{equation}
+
+	Полученное уравнение показывает, что самодвижущиеся жидкости ведут себя отлично от молекулярных жидкостей, и даже от жидкостей, состоящих из активных броуновских частиц.
+
+	Сравнение же этих результатов с показанными в разделе \ref{sec:ClassicalModelsWIthViscosity}, как уже говорилось, приводит к возникновению вопроса о существовании вязкости в модели Vicsek'a
