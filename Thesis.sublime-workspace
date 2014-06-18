@@ -44,37 +44,26 @@
 	"buffers":
 	[
 		{
-			"file": "chapter_ProgrammFeatures/chapter_ProgrammFeatures.tex",
+			"file": "chapter_Results/chapter_Results.tex",
 			"settings":
 			{
-				"buffer_size": 201,
+				"buffer_size": 3569,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "chapter_ProgrammFeatures/sec_ProgrammTasks.tex",
+			"file": "chapter_ProgrammFeatures/sec_Algorithms.tex",
 			"settings":
 			{
-				"buffer_size": 2267,
+				"buffer_size": 1322,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "chapter_ProgrammFeatures/sec_CuetteAdaptation.tex",
+			"file": "chapter_NatureFlocking/sec_ObservationResults.tex",
 			"settings":
 			{
-				"buffer_size": 154,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "\\section{Оптмизации, проведенные в программе-симуляторе} % (fold)\n\\label{sec:ProgrammOptimisations}\n\n    \\subsection{Особенности многопоточной обработки данных} % (fold)\n    \\label{sub:MultithreadMulticoreDataProcessing}\n        Широко известно, что увеличение тактовой частоты процессоров натолкнулось на физический предел, связанный с увеличением роли токов утечки в транзисторах при уменьшении размеров, и потому основной тренд в современном компьютеростроении - это наращивание числа ядер в процессорах, и улучшение эвристик, позволяющих использовать т.н. гиперпоточность. Итогом этого стала потенциальная возможность проводить вычисления в вплоть до 30-ти потоках одновременно, используя при этом только один процессор общего назначения (CPU).\n\n        Когда речь идет о задачах молекулярной динамики, предполагается симуляция взаимодействия хотя-бы нескольких сотен тысяч частиц. По счастью, групповые явления наблюдаются и на гораздо меньшем масштабе - несколько (десятков) тысяч частиц.\n\n        Свойство модели Vicsek'a, позволяющее успешно разбить задачу на множество потоков, ограниченное сверху лишь числом частиц заключается в том, что положения и скорости частиц в один момент времени однозначно определяют положения и скорости этих частиц в следующий момент. Также важно отметить, что это совершенно не зависит от порядка учета частиц. Таким образом, при разработке программы для выполнения на CPU мы можем безо всяких недостатоков получить практически линейное увеличение скорости вычислений в зависимости от доступного нам числа потоков.\n\n        \\begin{figure}[h]\n        \\centering\n            \\includegraphics[height=200pt]{Images/KlusterArhitecture}\n            \\caption{Пример архитектуры вычислительного кластера}\n            \\label{fig:KlusterArchitecture}\n        \\end{figure}\n\n        Задача несколько осложняется, если мы захотим пойти по пути всех исследовательских групп, и организовать выполнение приложения на вычислительном кластере. Поскольку, как мы видим на рис. \\ref{fig:KlusterArchitecture}, между отдельными узлами кластера проложены связи по локальной сети, здравый смысл подсказывает, что доступ к общей памяти в такой архитектуре окажется куда медленней, чем если бы вся информация была доступна локально. Даже несмотря на возможность скопировать данные для вычислений на каждый из узлов, все равно требуется оптимизировать обмен данными после каждого шага.\n\n        Кроме того, обычно очередность доступа к вычислительному кластеру жестко ограничивает возможность быстро исправить что-либо в программе и сразу же перезапустить ее для получения нового результата.\n    % subsection MultithreadMulticoreDataProcessing (end)\n\n    \\subsection{GPGPU вычисления} % (fold)\n    \\label{sub:gpgpu}\n        Проблема кластерных вычислений осложняется, помимо всего прочего, малой доступностью такого рода услуг. Здравый смысл подсказывает, что оборудование вычислительного кластера - сложный и дорогостоящий процесс, даже не принимая во вниамние дальнейшее обслуживание компьютерного парка. Потому, малым группам ученых без высокого финансирования необходимо искать обходные пути, не требующие доступа к кластерным суперкомпьютерам.\n\n        \\begin{figure}[h]\n        \\centering\n            \\includegraphics[height=200pt]{Images/GPU-diagramm}\n            \\caption{Пример архитектуры графического процессора}\n            \\label{fig:gpuArchitecture}\n        \\end{figure}\n\n        Таким путем является использование графических процессоров для проведения вычислений общего назначения. Как показано на рис. \\ref{fig:gpuArchitecture}, по существу графический процессор состоит нескольких сотен (или тысяч) простейших, т.н. потоковых процессоров, которые обладают поддеркой ограниченного набора инструкций, но при этом способных выполнять их действительно быстро. Кроме того, количество переходит в качество - простейшие вычисления, которые можно разбить на множество потоков могут выполняться одновременно всеми процессорами видеокарты.\n\n        Также на диаграмме можно заметить, что процессори GPU, аналогично вычислительным юнитам в кластере, сгруппировани в ``вычислительные блоки'', с общим доступом к элементу памяти. Это позволяет проводить часть вычислений пользуясь локальной копией данных, а затем отправлять результаты в ``общий буфер'' - область памяти к которой имеют доступ все потоковые процессоры.\n\n        В контексте модели Vicsek'a это позволяет нам, путем периодической сортировки частиц так, чтобы локально взаимодействующие частицы оказывались в смежной области памяти, существенно уменьшить число обращений к общей, и потому более медленной, памяти.\n    % subsection gpgpu (end)\n\n    \\subsection{Определение равновестного состояния системы} % (fold)\n    \\label{sub:EquilibriumState}\n        Помимо сугубо прикладных аспектов, т.е. вопроса ``на чем считать?'', необходимо отметить, что стандартная практика, применяемая во всех работах по моделированию самодвижущихся частиц, это запустить симуляцию для определенного значения шума, прождать от $10^{4}$ до $10^{6}$ шагов по времени, с тем чтобы ``минимизировать влияние начального распределения'', \\cite{huepe2008}, и после этого заполучить результат. \n    % subsection EquilibriumState (end)\n\n    \\subsection{Задачи перед программой} % (fold)\n    \\label{sub:TaksForProgramm}\n        Несмотря на существование большого числа авторов, которые проводили симуляции по модели Вичека (см. пункт \\ref{sec:CompModelsBasics}), доступность наработок для широкой общественности оставляет желать лучшего. Кроме того, по косвенным свидетельствам можно судить, что разработанные приложения в первую очередь ориентированы на выполнение на мультипроцессорных кластерах, что, по понятным причинам, не подходит к нашим реалиям. Можно предположить что лишь в исследовании, проведенном Алдано и соавторами \\cite{baglietto2008,aldana2009} фигурировали GPU (число частиц кратно 512), но явно это не указано. В любом случае, общеизвестно, что наилучшее обучение - это практика, и потому было принято решение реализовать с нуля программу, реализиющую модель Вичека.\n\n        Поскольку перед нами не стоял технический долг, была возможность заложить в архитектуру программы новейшие наработки в области многопоточного программирования и гетерогенных вычислений. Помимо этого в архитектуру программы был заложен потенциал к дальнейшему наращиванию функционала (а именно - расширению базы используемых моделей) без переписывания (и даже перекомпиляции) ядра, ответственного за организацию работы GPU. Косвенно был адресован вопрос оптимизации программы для имеющегося в нашем распоряжении железа.\n\n        Помимо архитектурных задач, связанных сразработкой ПО, была поставлена конкретная физическая задача: получение профилей скорости в Куэтт-подобном течении.\n    % subsection TaksForProgramm (end)\n% section ProgrammOptimisations (end)",
-			"file": "chapter_ProgrammFeatures/sec_MotivationForProgramm.tex",
-			"file_size": 6238,
-			"file_write_time": 130474896509957779,
-			"settings":
-			{
-				"buffer_size": 6808,
+				"buffer_size": 6828,
 				"line_ending": "Windows"
 			}
 		}
@@ -248,17 +237,35 @@
 	},
 	"file_history":
 	[
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/sec_MainModels.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Results/chapter_Results.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_Algorithms.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_ObservationResults.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.tex",
+		"/C/Program Files (x86)/MiKTex/tex/latex/base/fontenc.sty",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.bbl",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_TheoreticalModels/sec_StandartModels.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Abbreviations/chapter_Abbreviations.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/sec_MainModels.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/chapter_ModelsOfFlocking.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_NumericalCharacteristics.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_CuetteAdaptation.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_OptimisationsAndMotivations.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_ProgrammTasks.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Results/sec_Results.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_TheoreticalModels/chapter_TheoreticalModels.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_TheoreticalModels/sec_MicroPhaseDencityModel.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/chapter_NatureFlocking.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.log",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Presentation/text.log",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/chapter_Introduction.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_ExperimentalMethods.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.toc",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography.bib",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/sec_AdditionalModels.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/chapter_ProgrammFeatures.tex",
+		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/chapter_NatureFlocking.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_TheoreticalModels/sec_MicroPhaseDencityModel",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Presentation/text.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_Algorithms.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/Velocities_16.06_01.41.21.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/chapter_Introduction.tex",
 		"/F/Users/Maxim/Desktop/vakthesis.cls",
 		"/F/Users/Maxim/Desktop/Theses.tex",
 		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.216/README.txt",
@@ -291,9 +298,6 @@
 		"/D/Downloads/Installs/Office/Ashampoo Snap 7 v7.0.6 Final Ml_Rus/Ashampoo Snap 7 v7.0.6 RePack (& portable) by KpoJIuK/Readme.txt",
 		"/D/Downloads/Installs/Office/Ashampoo Snap 7 v7.0.6 Final Ml_Rus/Crack dll/ReadMy First!!!.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_ProgrammFeatures.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Results/sec_Results.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Results/chapter_Results.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.tex",
 		"/F/Users/Maxim/Desktop/PassServ",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_13.24.30.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_13.15.17.txt",
@@ -301,10 +305,6 @@
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_14.06_02.48.07.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Vicsek_AMPConsole/SplitsVelocities_15.06_03.49.58.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/sec_MotivationForProgramm.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/chapter_ModelsOfFlocking.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ProgrammFeatures/chapter_ProgrammFeatures.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/sec_AdditionalModels.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Abbreviations/chapter_Abbreviations.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Second/sec_Results.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_ComputerModels.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_ModelsOfFlocking/sec_MotivationForProgramm.tex",
@@ -312,9 +312,7 @@
 		"/C/Users/Max/AppData/Local/Temp/Shanin_-_Vokrug_sveta_za_280_036.txt",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_AnimalFlocking.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Second/sec_MotivationForProgramm.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_ObservationResults.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Second/chapter_Second.tex",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_NatureFlocking/sec_NumericalCharacteristics.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/chapter_First.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_First/sec_ComputerModels.tex",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Intro.tex",
@@ -332,14 +330,12 @@
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
 		"/C/Users/Max/.gitconfig",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography.bib",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705.dtx",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705s.bst",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705.log",
 		"/F/Users/Maxim/Desktop/disser-1.3.0/src/gost705.idx",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/chapter_Introduction/sec_Abbreviations.tex",
 		"/C/Users/Max/AppData/Local/Temp/Rar$DIa0.442/ä¿a¿ ô«a¿ß. ûóÑG«¬ »pßGd¡¿ - royallib.ru.txt",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.toc",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibLaTeX.js",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibTeX.js",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/ZoteroCollection/translators/BibTeX_RobinTan.js",
@@ -354,7 +350,6 @@
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/F/Users/Maxim/Desktop/New Text Document.txt",
 		"/F/Users/Maxim/Desktop/My Collection.bib",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.bbl",
 		"/F/Users/Maxim/Desktop/Exported Items.bib",
 		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/MainFile.aux",
 		"/F/Users/Maxim/Desktop/dict_ru_ru-0.3.7.oxt",
@@ -369,13 +364,7 @@
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
 		"/C/Users/Max/AppData/Roaming/Sublime Text 3/Packages/User/LatexThesises.sublime-settings",
 		"/F/Users/Maxim/Desktop/thesis.tex",
-		"/F/Users/Maxim/Desktop/disser-1.3.0/nomake.cmd",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/Bibliography1.bib",
-		"/F/Users/Maxim/Desktop/thesis.bib",
-		"/F/Users/Maxim/UserData/University/4 course/Vicsek/Thesis/.gitignore",
-		"/F/Users/Maxim/Desktop/nomake.cmd",
-		"/C/Users/Max/AppData/Local/Temp/science-2.bib",
-		"/C/Users/Max/AppData/Local/Temp/citations.bib"
+		"/F/Users/Maxim/Desktop/disser-1.3.0/nomake.cmd"
 	],
 	"find":
 	{
@@ -386,6 +375,7 @@
 		"height": 112.0,
 		"where_history":
 		[
+			"F:\\Users\\Maxim\\UserData\\University\\4 course\\Vicsek\\Thesis"
 		]
 	},
 	"find_state":
@@ -393,6 +383,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" \\ref",
+			" \\cite",
 			"chap",
 			"chapt",
 			"розд",
@@ -518,9 +510,7 @@
 			"c: ",
 			".n",
 			"c:.*n",
-			".",
-			": ",
-			":.*"
+			"."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -528,6 +518,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"~\\ref",
+			"~\\cite",
 			" --- ",
 			"journal",
 			"",
@@ -591,52 +583,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "chapter_ProgrammFeatures/chapter_ProgrammFeatures.tex",
+					"file": "chapter_Results/chapter_Results.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 201,
+						"buffer_size": 3569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28,
-								28
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "chapter_ProgrammFeatures/sec_ProgrammTasks.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2267,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2267,
-								2267
+								0,
+								0
 							]
 						],
 						"settings":
@@ -644,34 +608,6 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 447.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "chapter_ProgrammFeatures/sec_CuetteAdaptation.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								28,
-								28
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -679,28 +615,50 @@
 					},
 					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "chapter_ProgrammFeatures/sec_MotivationForProgramm.tex",
+					"buffer": 1,
+					"file": "chapter_ProgrammFeatures/sec_Algorithms.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6808,
+						"buffer_size": 1322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5149,
-								5149
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "chapter_NatureFlocking/sec_ObservationResults.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -710,10 +668,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1482.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -736,18 +694,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -794,7 +745,7 @@
 		[
 			[
 				"",
-				"F:\\Users\\Maxim\\UserData\\University\\4 course\\Vicsek\\Thesis\\Presentation\\text.sublime-project"
+				"F:\\Users\\Maxim\\UserData\\University\\4 course\\Vicsek\\Thesis\\DataFiles.sublime-project"
 			]
 		],
 		"width": 380.0

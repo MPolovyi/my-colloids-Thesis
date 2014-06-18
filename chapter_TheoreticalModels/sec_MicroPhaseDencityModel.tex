@@ -2,7 +2,7 @@
 \section{Модель микроскопической фазовой плотности} % (fold)
 \label{sec:KulinskyModel}
 
-	Подход, основанный на рассмотрении функционала микроскопической фазовой плотности, предложенный в последне годы \cite{chepizhko2013,kulinskii2012}, позволил получить, в приближении идеальной самодвижущейся жидкости, уравнения движения, отличные от рассмотренных в разделе \ref{sec:ClassicalModelsWIthViscosity}.
+	Подход, основанный на рассмотрении функционала микроскопической фазовой плотности, предложенный в последне годы~\cite{chepizhko2013,kulinskii2012}, позволил получить, в приближении идеальной самодвижущейся жидкости, уравнения движения, отличные от рассмотренных в разделе~\ref{sec:ClassicalModelsWIthViscosity}.
 
 	Строгое получение этих уравнений выходит далеко за рамки работы, потому приведем здесь только исходные положения и результаты.
 
@@ -10,31 +10,72 @@
 	\begin{equation}
 		N(x,t) = \sum_i \delta(x-x_i(t))
 	\end{equation}
-	где $x = (\boldsymbol{r}, \boldsymbol{v})$, подчинаяется закону сохранения
+	где $x = (\boldsymbol{r}, \boldsymbol{v})$, подчинаяется закону сохранения:
 	\begin{equation}
 		\partial_t N  + \boldsymbol{v} \partial_{\boldsymbol{r}} N + \partial_{\boldsymbol{v}} (\boldsymbol{\dot{v}} N) = 0
 	\end{equation}
 
-	Соответствующие плотность и поток плотности получаются как
+	Соответствующие плотность и поток плотности получаются как:
 	\begin{align}
 		\rho^{(m)}(\boldsymbol{r},t) = \int N(x,t)d \boldsymbol{v}
 		\\
 		\boldsymbol{j}^{(m)}(\boldsymbol{r},t) = \int \boldsymbol{v} N(x,t)d \boldsymbol{v}
 	\end{align}
 
-	В контексте модеил Vicsek'а, уравнение движения без шумового члена записывается как
+	В контексте модеил Vicsek'а уравнение движения без шумового члена записывается как:
 	\begin{equation}
 		\frac{d \boldsymbol{v_i}}{dt} = \boldsymbol{\omega_i} \times \boldsymbol{v_i}
 	\end{equation}
 	и отображает тот факт, что энергия частиц в алгоритме Vicsek'a сохраняется.
 
-	Путем не сложных, но весьма громозких преобразований, для предельного случая идеальной самодвижущейся жидкости можно получить следующее уравнение движения:
+	В наиболее общей форме, уравнение для поля гидродинамической скорости $\boldsymbol{v}$ получается из уравнения для одночастичной функции распределения:
+	\begin{equation}
+		(\partial_t + \boldsymbol{v} \partial_{\boldsymbol{r}}+\partial_{\boldsymbol{v}}\boldsymbol{\mathcal{F}}) f_1(x,t) = I(x,t)
+	\end{equation}
+	где накладывается ограничение
+	\begin{equation}
+		\int \delta v_i f_1 dx= 0
+	\end{equation}
+
+	и записывается следующим образом:
+	\begin{equation}
+	\label{eq:KulinskiMainEqation}
+		\frac{\partial \rho v_i}{\partial t} + \frac{\partial}{\partial x_i} = -\frac{\partial P_{ij}}{\partial x_j} + \mathcal{F}_i + n \int \delta v_i I(x,t)d\boldsymbol{v}
+	\end{equation}
+
+	В уравнении~\ref{eq:KulinskiMainEqation} $P_{i,j}$ --- тензор давления, а $\mathcal{F}$ --- средняя плотность силы самосогласованного поля.
+
+	Переходя сначала к гидродинамическому пределу идеальной жидкости вичековского типа, то есть пренебрегая всеми вкладами корелляций в уравнении~\ref{eq:KulinskiMainEqation}, можно получить следующее базовое уравнение:
+	\begin{equation}
+		\frac{d \boldsymbol{v}}{dt} = -\frac{\nabla p_0}{\rho} + p_0 \boldsymbol{v}
+	\end{equation}
+	где $p_0 = \frac{\rho}{2} (1-\boldsymbol{v}^2)$, для которого можно получить решение в виде, независимом от пространственной координаты:
+
+	\begin{equation}
+	 	\rho = \rho_0, \quad |\boldsymbol{v}(v)| = \frac{1}{\sqrt{1+e^{-\rho_0 t}(\frac{1}{u_0^2}-1)}}
+	\end{equation} 
+
+	Учет шума может быть проведено путем рассмотрения перехода от предела нулевого шума к пределу низкого шума. Тогда становится возможным использовать приближение локального равновесия.
+
+	В таком приближении для одномерного случая можно разложить тензор давления в ряд, и путем достаточно громоздких преобразований, также пользуясь результатами~\cite{kulinskii2009}, можно выписать уравнение движения системы самодвижущихся частиц для одномерного случая:
 
 	\begin{equation}
 	\label{eq:KulinsciiEqOfMotion}
-		\frac{\partial v}{\partial x} = -\frac{1}{2 \rho} \frac{\partial}{\partial x} (\rho -\rho v^2)+(\frac{\rho}{2} - \frac{\alpha}{\rho} \frac{\partial v}{\partial x})v + \frac{\beta}{\rho} \frac{\partial v}{\partial x} + \frac{\rho}{2} + \frac{\alpha}{2}) v^3
+		\frac{\partial v}{\partial x} = -\frac{1}{2 \rho} \frac{\partial}{\partial x} (\rho -\rho v^2)+(\frac{\rho}{2} - \frac{\alpha}{\rho} \frac{\partial v}{\partial x})v + (\frac{\beta}{\rho} \frac{\partial v}{\partial x} + \frac{\rho}{2} + \frac{\alpha}{2}) v^3
 	\end{equation}
 
-	Полученное уравнение показывает, что самодвижущиеся жидкости ведут себя отлично от молекулярных жидкостей, и даже от жидкостей, состоящих из активных броуновских частиц.
+	Можно сравнить коэффициенты $\mu$ и $\varepsilon$ с результатами~\cite{bertin2006}.
 
-	Сравнение же этих результатов с рассмотренными в разделе \ref{sec:ClassicalModelsWIthViscosity}, как уже говорилось, приводит к возникновению вопроса о существовании вязкости в модели Vicsek'a
+	В приближении этого раздела, 
+	\begin{equation}
+	\label{eq:KulinsciiCoefficients}
+		\mu = \frac{1}{2}\rho, \quad \xi = \frac{1}{2\rho} + \frac{\alpha}{2\rho^2}
+	\end{equation}
+	в то время как в~\cite{bertin2006} эти коэффициенты равны
+	\begin{equation}
+		\mu = \frac{8 \rho}{3\pi} \approx 0.85 \rho, \quad \xi = \frac{4}{\pi\rho} - \frac{6 \sigma^2}{\pi \rho} + \mathcal{O}(\sigma^4)
+	\end{equation}
+
+	Полученное уравнение показывает, что самодвижущиеся жидкости ведут себя отлично от молекулярных жидкостей и даже от жидкостей, состоящих из активных броуновских частиц.
+
+	Сравнение же этих результатов с рассмотренными в разделе~\ref{sec:ClassicalModelsWIthViscosity}, как уже говорилось, приводит к возникновению вопроса о существовании вязкости в модели Vicsek'a, поскольку в этом подходе показывается отсутствие сдвиговой вязкости, в то время как в других приближениях вклад вязкости проявлялся в гидродинамических уравнениях, и был не равен нулю даже при стремлении шума к нулю.
